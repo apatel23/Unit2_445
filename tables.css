@@ -1,0 +1,96 @@
+/* Center the tables */
+body {
+    width: 100%;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* For all tables*/
+table {
+    margin-top: 20px;
+}
+
+/* Schedule Table style*/
+table#sched {
+    border: 5px solid #191975;
+    border-collapse: collapse;
+}
+
+table#sched th, td {
+    border: 2px solid #191975;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;    
+}
+
+/* Background color for header */
+table#sched th {
+    color: black;
+    text-align: center;
+    text-style: bold;
+    background-color: #C8C8C8;
+}
+
+
+/* Study table style */
+table#study {
+    border: none;
+}
+
+/* Dashed bottom border */
+table#study td {
+    border: none;
+    border-bottom: 1px dashed black;
+}
+
+table#study td, th {
+    padding: 5px;
+}
+
+/* bold first row */
+#study tr:first-of-type {
+    font-weight: bold;
+}
+
+/* no nottom border for last element --doesnt work */
+#study tr:last-of-type {
+    border-bottom: none;    
+}
+
+table#study thead {
+    background-color: #99E6FF;
+}
+
+table#study tfoot {
+    color: blue;
+    background-color: #D6F5FF;
+}
+
+
+/* Refreshment table style */
+table#refresh {
+    border: 5px solid #000099;
+    border-collapse: collapse;
+}
+
+/* Background color same as border*/
+table#refresh th {
+    background-color: #000099;
+    color: white;
+}
+
+/* Alternate color in rows (odd) */
+table#refresh tr:nth-child(odd) {
+    background-color: #E6E6E6;
+}
+
+/* Caption style */
+caption {
+    font-size: 25px;
+    font: serif;
+    font-weight: bold;
+}

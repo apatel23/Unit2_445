@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="form.css" />
+</head>
+<body>
+    <h1><b>
+        Subscribe to Alex Weekly
+    </b></h1>
+<form>
+    <fieldset>
+        <legend>Account Information:</legend>
+        Name:
+        <input type="text" name="name" size="30" placeholder="First Last" required>
+        <br>
+        Password:
+        <input type="password" name="password" required>
+        <br>
+        E-mail:
+        <input type="email" name="email" size="30" required>
+        <br>
+        Phone:
+        <input type="tel" name="phone" placeholder="XXX-XXX-XXXX"  maxlength="10" size="15" required>
+        <br>
+        Birthday:
+        <input type="date" name="bday" max="1900-01-01" min="2010-12-31">
+    </fieldset>
+    <br><br>
+    <p>Write alittle bit about yourself below:</p>
+    <textarea name="aboutme" rows="10" cols="50" wrap="soft" placeholder="About Me"></textarea>
+    
+    <p>How would you like to be contacted? (please select atleast one)</p>
+    <input type="checkbox" name="contact1" value="email" checked> Email
+    <input type="checkbox" name="contact2" value="phone"> Call
+    <input type="checkbox" name="contact3" value="text"> Text SMS
+    
+    <br>
+    <p>Do you want to receive weekly news via email?</p>
+    <label for="y">Yes</label>
+    <input type="radio" name="ques" id="y" value="yes" checked>
+    <br>
+    <label for="n">No</label>
+    <input type="radio" name="ques" id="n" value="no">
+
+    <br>
+    <p>How did you hear about Alex Weekly?</p>
+    <select size="3">
+        <option value="friend">Friend</option>
+        <option value="family">Family</option>
+        <option value="referral">Referral</option>
+        <option value="other">Other</option>
+    </select>
+    
+    <p>Choose a Favorite Magazine below:</p>
+    <input list="magazines">
+        <datalist id="magazines">
+            <option value="Forbes">
+            <option value="Time">
+            <option value="Sports Illustrated">
+            <option value="Outdoorsman">
+            <option value="Wired">
+        </datalist>
+        
+    <br>
+    <p>How many days a week do you read?</p>
+    0
+    <input type="range" name="slider" min="0" max="7">
+    7
+    
+    <br>
+    Select your favorite color:
+    <input type="color" name="favcolor" value="#ff0000">
+    
+    <br><br>
+    <button type="button" onclick="alert('Clear data')">Reset</button>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>
